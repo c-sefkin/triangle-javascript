@@ -6,4 +6,8 @@ describe('triangleTracker', function() {
   it("is isosceles for most triangles where two sides are equal", function() {
     expect(triangleTracker(3,2,2)).to.equal("isosceles");
   });
+
+  it("is scalene for most triangles where no sides are equal", function() {
+    expect(triangleTracker(3,2,1)).to.equal("scalene");
+  });
 });
